@@ -1,0 +1,279 @@
+/* ---------- Root ---------- */
+.root {
+    -fx-background-color: #f4f4f4; /* clean light gray background */
+}
+
+.scroll-pane,
+.scroll-pane .viewport {
+    -fx-background-color: transparent; /* allow root bg to show */
+}
+
+/* ---------- Layout Utilities ---------- */
+.padding-large {
+    -fx-padding: 40 30;
+}
+
+.spacing-medium {
+    -fx-spacing: 20;
+}
+
+.spacing-small {
+    -fx-spacing: 15;
+}
+
+/* ---------- Card ---------- */
+.card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-padding: 40 35;
+    -fx-spacing: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+/* ---------- Typography ---------- */
+.title {
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+    -fx-text-fill: #111111;
+    -fx-padding: 0 0 5 0;
+}
+
+.subtitle {
+    -fx-font-size: 15;
+    -fx-text-fill: #555555;
+    -fx-padding: 0 0 15 0;
+}
+
+.form-label {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #374151;
+}
+
+/* ---------- Form Elements ---------- */
+.text-field,
+.password-field {
+    -fx-pref-height: 45;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1;
+    -fx-padding: 0 15;
+    -fx-font-size: 14;
+
+    /* Focus styling */
+    -jfx-focus-color: #2563eb;
+    -jfx-unfocus-color: #d1d5db;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 2;
+}
+
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1;
+    -fx-padding: 10 15;
+    -fx-font-size: 14;
+}
+
+.text-area:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 2;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* ---------- ComboBox ---------- */
+.combo-box {
+    -fx-pref-height: 45;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1;
+    -fx-font-size: 14;
+}
+
+.combo-box:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 2;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 8 15;
+    -fx-text-fill: #374151;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #f3f4f6;
+}
+
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: #ffffff;
+}
+
+/* ---------- Buttons (Unified Blue Color) ---------- */
+.button,
+.button-secondary {                 /* unified: all buttons same color */
+    -fx-background-color: #2563eb;  /* primary blue */
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.button:hover,
+.button-secondary:hover {
+    -fx-background-color: #1e40af; /* darker blue on hover */
+}
+
+.button:pressed,
+.button-secondary:pressed {
+    -fx-background-color: #1d4ed8; /* pressed shade */
+}
+
+/* ---------- Image Upload Section ---------- */
+.image-view {
+    -fx-background-color: #f9fafb;
+    -fx-background-radius: 8;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+}
+
+/* ---------- Message Label ---------- */
+#messageLabel {
+    -fx-text-fill: #ef4444;
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0;
+    -fx-wrap-text: true;
+}
+
+#messageLabel.success {
+    -fx-text-fill: #10b981;
+}
+
+#messageLabel.info {
+    -fx-text-fill: #2563eb;
+}
+
+/* ---------- Specific Field Styling ---------- */
+#nameField,
+#emailField,
+#passwordField,
+#confirmPasswordField,
+#phoneField,
+#schoolField,
+#needAmountField {
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+#addressArea,
+#reasonTextArea {
+    -fx-prompt-text-fill: #9ca3af;
+    -fx-pref-row-count: 3;
+}
+
+#reasonTextArea {
+    -fx-pref-row-count: 4;
+}
+
+#streamComboBox {
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+#uploadPictureButton {
+    -fx-pref-width: 200;
+}
+
+#pictureImageView {
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+}
+
+#registerButton {
+    -fx-pref-width: 150;
+}
+
+#backButton {
+    -fx-pref-width: 130;
+}
+
+/* ---------- HBox Styling ---------- */
+.hbox {
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* ---------- Scrollbar ---------- */
+/* Scrollbar track (background area) */
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: #f4f4f4; /* match root */
+}
+
+/* Scrollbar thumb (the draggable part) */
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #cbd5e1; /* lighter blue-gray thumb */
+    -fx-background-radius: 6;
+}
+
+/* Hover effect for thumb */
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #94a3b8; /* slightly darker on hover */
+}
+
+/* Increment/Decrement buttons (arrows) */
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #e2e8f0; /* soft light gray */
+    -fx-background-radius: 4;
+}
+
+/* The arrow symbols inside buttons */
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #111111; /* black arrows */
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media screen and (max-width: 600px) {
+    .card {
+        -fx-padding: 25 20;
+    }
+
+    .padding-large {
+        -fx-padding: 20 15;
+    }
+
+    .title {
+        -fx-font-size: 20;
+    }
+}

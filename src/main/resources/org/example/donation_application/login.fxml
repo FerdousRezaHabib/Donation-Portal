@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" styleClass="root" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.donation_application.controllers.LoginController"
+        stylesheets="@styles/login1.css">
+
+    <ScrollPane fitToWidth="true" styleClass="root">
+        <VBox alignment="CENTER" styleClass="padding-large">
+            <Region VBox.vgrow="ALWAYS" />
+
+            <VBox alignment="CENTER" styleClass="card" maxWidth="400">
+                <children>
+                    <Label text="Donation Portal" styleClass="title" />
+
+                    <VBox styleClass="spacing-medium" alignment="CENTER">
+                        <children>
+                            <TextField fx:id="emailField" promptText="Email address" prefHeight="45" />
+                            <PasswordField fx:id="passwordField" promptText="Password" prefHeight="45" />
+                            <ComboBox fx:id="userTypeCombo" prefHeight="45" maxWidth="Infinity" />
+
+                            <Button fx:id="loginButton" onAction="#handleLogin" text="Sign In"
+                                    prefHeight="45" maxWidth="Infinity" styleClass="button" />
+
+                            <Label fx:id="messageLabel" wrapText="true" />
+                        </children>
+                    </VBox>
+
+                    <Separator />
+
+                    <VBox styleClass="spacing-small" alignment="CENTER">
+                        <children>
+                            <Label text="Don't have an account?" styleClass="subtitle" />
+                            <HBox styleClass="spacing-small" alignment="CENTER">
+                                <children>
+                                    <Button fx:id="registerStudentButton" onAction="#handleStudentRegister"
+                                            text="Register as Student" styleClass="button-secondary" />
+                                    <Button fx:id="registerDonorButton" onAction="#handleDonorRegister"
+                                            text="Register as Donor" styleClass="button-secondary" />
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </children>
+            </VBox>
+
+            <Region VBox.vgrow="ALWAYS" />
+        </VBox>
+    </ScrollPane>
+</VBox>

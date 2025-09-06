@@ -1,0 +1,110 @@
+/* Root container */
+.root {
+    -fx-background-color: #e0f7fa; /* Overridden to match your original background */
+    -fx-padding: 40 30; /* Adjusted padding */
+    -fx-font-family: "Segoe UI", system-ui, -apple-system, sans-serif; /* Overridden font */
+    -fx-text-fill: #2c3e50; /* Overridden text color */
+}
+
+/* Navigation bar */
+.nav-bar {
+    -fx-background-color: white; /* Overridden to match your original navbar style */
+    -fx-border-color: transparent transparent #e1e8ed transparent; /* Added bottom border */
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 16px 24px; /* Adjusted padding */
+}
+
+/* Welcome text */
+.welcome-text {
+    -fx-text-fill: #2c3e50; /* Overridden text color */
+    -fx-font-size: 18px; /* Adjusted font size */
+    -fx-font-weight: 400; /* Adjusted font weight */
+}
+
+/* Secondary buttons */
+.button-secondary {
+    -fx-background-color: white;
+    -fx-text-fill: #3498db; /* Overridden to match your original button color */
+    -fx-border-color: #3498db;
+    -fx-border-width: 1px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 24px; /* Adjusted padding */
+    -fx-background-radius: 6px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+/* TabPane styling */
+.main-tabpane .tab {
+    -fx-background-color: transparent; /* Adjusted to match original tab style */
+}
+
+.main-tabpane .tab-header-background {
+    -fx-background-color: #f8f9fa; /* Overridden to match your original header style */
+}
+
+/* Content container inside scrollpane */
+.content-container {
+    -fx-padding: 40px; /* Adjusted padding */
+}
+
+/* Card style for profile/donation sections */
+.card {
+    -fx-background-color: #ffffff; /* Ensured card background remains white */
+    -fx-background-radius: 12px; /* Adjusted to match your original radius */
+    -fx-padding: 30px 25px; /* Adjusted padding to match original */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4); /* Added your drop shadow effect */
+    -fx-spacing: 20px; /* Added spacing */
+}
+
+/* Section headers */
+.section-header {
+    -fx-font-size: 14px;
+    -fx-font-weight: 500; /* Adjusted to match your section header style */
+    -fx-text-fill: #2c3e50; /* Overridden text color */
+}
+
+/* Subtitles */
+.subtitle {
+    -fx-font-size: 16px; /* Adjusted font size to match your subtitle style */
+    -fx-font-weight: 400; /* Adjusted font weight */
+    -fx-text-fill: #6c757d; /* Overridden text color */
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent; /* Ensured transparency */
+    -fx-border-color: transparent;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: white; /* Ensured white background */
+    -fx-border-color: #e1e8ed;
+    -fx-table-cell-border-color: #e1e8ed;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f8f9fa; /* Adjusted to match original style */
+}
+
+.table-view .column-header,
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50; /* Adjusted text color */
+}
+
+.table-view .cell {
+    -fx-text-fill: #111827; /* Ensured dark text in table cells */
+}
+
+/* General labels */
+.label {
+    -fx-text-fill: #2c3e50; /* Overridden text color */
+}

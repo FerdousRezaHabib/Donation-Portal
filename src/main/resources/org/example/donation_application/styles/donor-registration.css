@@ -1,0 +1,101 @@
+/* ---------- Root ---------- */
+.app-background {
+    -fx-background-color: #f4f4f4; /* clean light gray background */
+}
+
+.scroll-pane,
+.scroll-pane .viewport {
+    -fx-background-color: transparent; /* allow root bg to show */
+}
+
+/* ---------- Card ---------- */
+.card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-padding: 30 25;
+    -fx-spacing: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+/* ---------- Headings ---------- */
+.title {
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-text-fill: #111111; /* crisp black */
+}
+.subtitle {
+    -fx-font-size: 14;
+    -fx-text-fill: #555555; /* medium gray */
+}
+
+/* ---------- Inputs (FormsFX / JFoenix ready) ---------- */
+.text-field,
+.password-field {
+    -fx-pref-height: 45;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d1d5db; /* neutral gray border */
+    -fx-padding: 0 10;
+
+    /* JFoenix focus colors */
+    -jfx-focus-color: #2563eb;     /* blue focus */
+    -jfx-unfocus-color: #d1d5db;
+}
+
+/* ---------- Primary buttons (all buttons unified) ---------- */
+.button,
+.button-secondary {                 /* unified: all buttons same color */
+    -fx-background-color: #2563eb;  /* primary blue */
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.button:hover,
+.button-secondary:hover {
+    -fx-background-color: #1e40af; /* darker blue on hover */
+}
+
+.button:pressed,
+.button-secondary:pressed {
+    -fx-background-color: #1d4ed8; /* pressed shade */
+}
+
+/* ---------- Message label ---------- */
+#messageLabel {
+    -fx-text-fill: #ef4444; /* red for errors */
+    -fx-font-size: 13;
+}
+
+/* ---------- Scrollbar ---------- */
+/* Scrollbar track (background area) */
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: #f4f4f4; /* match root */
+}
+
+/* Scrollbar thumb (the draggable part) */
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #cbd5e1; /* lighter blue-gray thumb */
+    -fx-background-radius: 6;
+}
+
+/* Hover effect for thumb */
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #94a3b8; /* slightly darker on hover */
+}
+
+/* Increment/Decrement buttons (arrows) */
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #e2e8f0; /* soft light gray */
+    -fx-background-radius: 4;
+}
+
+/* The arrow symbols inside buttons */
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #111111; /* black arrows */
+}
